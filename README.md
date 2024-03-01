@@ -2,22 +2,20 @@
 
 [![Community Discord](https://img.shields.io/discord/448979533891371018.svg)](https://aka.ms/makecodecommunity)
 
-This library provides a driver for various Neo Pixel LED strips, 
+This library provides a driver for various Neo Pixel LED strips,
 see https://www.adafruit.com/category/168.
 
 NeoPixels consist of programmable RGB LEDs (WS2812B), every one of them controlled
-separately.  
+separately.
 
-## ~ hint
+## Hint
 
-See [Microsoft/pxt-ws2812b](https://makecode.microbit.org/pkg/microsoft/pxt-ws2812b) for basic WS2812B led support. 
-
-## ~
+See [Microsoft/pxt-ws2812b](https://makecode.microbit.org/pkg/microsoft/pxt-ws2812b) for basic WS2812B led support.
 
 ## Basic usage
 
 ```blocks
-// Create a NeoPixel driver - specify the pin, number of LEDs, and the type of 
+// Create a NeoPixel driver - specify the pin, number of LEDs, and the type of
 // the NeoPixel srip, either standard RGB (with GRB or RGB format) or RGB+White.
 let strip = neopixel.create(DigitalPin.P0, 24, NeoPixelMode.RGB);
 
@@ -31,11 +29,11 @@ strip.setPixelColor(3, NeoPixelColors.Blue);    // blue
 strip.show()
 ```
 
-Use ``||setBrightness||`` to lower the brightness (it's maxed out by default).
+Use `||setBrightness||` to lower the brightness (it's maxed out by default).
 
-Use ``||shift||`` or ``||rotate||`` to shift the lights around.
+Use `||shift||` or `||rotate||` to shift the lights around.
 
-Use ``||setPixelWhiteLED||`` to set brightness of the white pixel for RGB+W strips. 
+Use `||setPixelWhiteLED||` to set brightness of the white pixel for RGB+W strips.
 
 ## HSL color format
 
@@ -61,8 +59,8 @@ while (true) {
 
 ## Supported targets
 
-* for PXT/microbit
-* for PXT/calliope
+- for PXT/microbit
+- for PXT/calliope
 
 ## License
 
